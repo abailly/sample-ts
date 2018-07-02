@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "esModuleInterop": false,
+    "target": "es6",
+    "declaration": true,
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "strict": true,
+    "outDir": "build",
+    "baseUrl": ".",
+    "paths": {
+      "*": [
+        "node_modules/",
+        "services/types/*",
+        "server/types/*"
+      ],
+      "@services/*": [
+        "services/*"
+      ]
+    }
+  },
+  "files": [
+    "index.ts"
+  ],
+  "include": [
+    "services/**/*",
+    "server/**/*"
+  ]
+}
